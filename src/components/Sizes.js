@@ -10,8 +10,8 @@ const Sizes = ({ sizes, ...props }) => (
         key={index}
         // eslint-disable-next-line
         class={active ? styles.active_box : completed ? styles.inverted_box : styles.normal_box}
-        height="98%"
-        width="100"
+        height="50%"
+        width="12%"
         top="center"
         left={`${index * 13}%`}
         align="center"

@@ -20,7 +20,7 @@ const Category = ({ title, sizes, ...props }) => {
       <Sizes
         sizes={sizes}
         width="63%"
-        height="98%"
+        height="96%"
         left="1%"
         top="center"
         // eslint-disable-next-line
@@ -31,7 +31,7 @@ const Category = ({ title, sizes, ...props }) => {
         done={done}
         total={total}
         width="34%"
-        height="98%"
+        height="96%"
         left="65%"
         top="center"
         // eslint-disable-next-line

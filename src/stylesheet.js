@@ -11,35 +11,37 @@ export default {
     },
   },
 
-  active_box: {
-    border: {
-      type: 'line',
-    },
+  green_bg: {
     style: {
-      bg: 'green',
-      fg: 'black',
-      border: {
-        fg: 'green',
-        blink: true,
-        bold: true,
-      },
+      bg: '#00ff00',
+    },
+  },
+  blue_bg: {
+    style: {
+      bg: '#0000ff',
+    },
+  },
+  red_bg: {
+    style: {
+      bg: '#ff0000',
+      fg: '#ffffff',
     },
   },
 
-  normal_box: {
-    border: {
-      type: 'line',
-    },
+  active_box: {
     style: {
+      bg: 'green',
+      fg: 'black',
+    },
+  },
+  normal_box: {
+    style: {
+      bold: true,
       bg: 'black',
       fg: 'white',
     },
   },
-
   inverted_box: {
-    border: {
-      type: 'line',
-    },
     style: {
       bg: 'black',
       fg: 'white',
