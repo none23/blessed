@@ -1,32 +1,36 @@
 import React, { PropTypes } from 'react';
 import stylesheet from '../stylesheet';
 
-const Progress = ({ done, total, width, height, top, left }) => (
-  <progressbar
-    class={stylesheet.bordered} // eslint-disable-line
-    style={{ bar: { bg: 'green' } }}
-    filled={`${done / total * 100}%`}
-    height={height}
-    width={width}
-    top={top}
-    left={left}
-  />
-);
+const Progress = ({ done, total, ...props }) => {
+  const filled = parseInt(100 * done / total, 10);
+  return (
+    <element
+      class={stylesheet.bordered} // eslint-disable-line
+      label={`${filled}%`}
+      {...props}
+    >
+      <progressbar
+        filled={`${filled}%`}
+        style={{
+          style: {
+            border: {
+              bg: 'black',
+              fg: 'green',
+            },
+          },
+          bar: {
+            bg: 'green',
+            fg: 'black',
+          },
+        }}
+      />
+    </element>
+  );
+};
 
 Progress.propTypes = {
   done: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  width: PropTypes.string,
-  height: PropTypes.string,
-  top: PropTypes.string,
-  left: PropTypes.string,
-};
-
-Progress.defaultProps = {
-  width: '100%',
-  height: '100%',
-  top: '0%',
-  left: '0%',
 };
 
 export default Progress;

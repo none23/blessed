@@ -8,31 +8,22 @@
     "lint-fix": "eslint --fix src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/none23/blessed.git"
-  },
-  "author": "none23 <n.anisimov.23@gmail.com> (https://github.com/none23)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/none23/blessed/issues"
-  },
-  "homepage": "https://github.com/none23/blessed#readme",
   "dependencies": {
     "babel-cli": "^6.24.1",
     "blessed": "^0.1.81",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react": "^0.14.7",
-    "react-blessed": "^0.1.8"
+    "react-blessed": "^0.1.8",
+    "react-blessed-contrib": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.3.0",
-    "eslint-config-none23": "^3.6.0",
+    "eslint": "^4.4.0",
+    "eslint-config-none23": "^3.6.2",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jest": "^20.0.3",
@@ -41,5 +32,14 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-standard": "^3.0.1"
-  }
+  },
+  "author": "none23 <n.anisimov.23@gmail.com> (https://github.com/none23)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/blessed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/none23/blessed/issues"
+  },
+  "license": "MIT"
 }
