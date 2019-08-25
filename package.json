@@ -11,7 +11,7 @@
   "dependencies": {
     "babel-cli": "^6.24.1",
     "blessed": "^0.1.81",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "prop-types": "^15.5.10",
     "react": "^0.14.7",
     "react-blessed": "^0.1.8",
